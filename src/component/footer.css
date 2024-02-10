@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+     background-color: #1e1e1e;
+     color: #EEE;  
+     padding: 10px; ;
+    
+}
+.liste__element{
+ list-style: none;
+ 
+}
+.hyperlien{
+ text-decoration: none;
+ color: inherit;
+
+}
+img{
+    width:40px;
+    height:40px;
+}
+.premiere__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+

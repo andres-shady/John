@@ -1,0 +1,23 @@
+.image{
+    width:90%;
+    height:30%;
+    display: block;
+     justify-content:center;
+     padding-left: 10%;
+     padding-right:10% ;
+}
+
+.texte{
+    text-align: center;
+    font-size: 25px;
+    padding-right: 25%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    text-align: justify;
+}
+.marke{
+    color: #0d6efd;
+}
+.pe{
+    font-size: 50px;
+}

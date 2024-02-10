@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import"./App.css"
+import React from "react";
+import  './App';
+import { Route,Routes } from "react-router-dom";
 
-function App() {
-  return (
+import Acueille from "./page/pageAcueille";
+import Blog from "./page/pageBlog";
+import Contact from "./page/pageContact";
+import Realisation from "./page/pageRealisation";
+import Service from "./page/pageService";
+import MentionLegal from "./page/pageMentionLegal";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+
+function App(){
+     return(
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+         <h1 className="hh">acc</h1>
 
-export default App;
+       <header>
+        <Header/>
+        </header>
+       
+        <footer>
+            <Footer/>
+        </footer>
+       
+   
+    
+        <Routes>
+
+        <Route path="/" element={<Acueille/>}></Route>
+         <Route path="/Blog" element={<Blog/>}></Route>
+         <Route path="/Contact" element={<Contact/>}></Route>
+         <Route path="/MentionLegal" element={<MentionLegal/>}></Route>
+         <Route path="/Realisation" element={<Realisation/>}></Route>
+         <Route path="/Service" element={<Service/>}> </Route>
+
+        </Routes>
+        </div>
+    )
+    
+}     
+    
+     
+export default App
